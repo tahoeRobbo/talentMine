@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 
-var labelSchema = mongoose.Schema({
+var trackSchema = mongoose.Schema({
 	name : String,
 	genre : String, 
 	artists : []
 });
 
-module.exports = mongoose.model('track, trackSchema');
+module.exports = mongoose.model('Track', trackSchema);

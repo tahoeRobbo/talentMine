@@ -6,8 +6,6 @@ var bodyParser = require('body-parser');
 mongoose.connect('mongodb://localhost/talentmine');
 
 var app = express();
-
-
 app.use(bodyParser.json());
 
 
@@ -28,7 +26,6 @@ app.get('/api/tracks:track_id', function(req, res) {
 });
 
 app.post('/api/tracks', function(req, res) {
-	return res.json({
 		Track.create({
 		name : req.body.name,
 		genre : req.body.genre
@@ -37,7 +34,6 @@ app.post('/api/tracks', function(req, res) {
 			return res.status(500).end();
 		}
 		return res.json(new_track);
-	})
 	});
 });
 
