@@ -16,12 +16,16 @@ app.get('/', function(req, res) {
 
 //TRACKS//////////////////////////////////////////////
 app.get('/api/tracks', function(req, res) {
-	return res.json([]);
+	Track.find({}).exec().then(function(tracks){
+		res.json(tracks);
+	});
 });
 
 app.get('/api/tracks:track_id', function(req, res) {
-	return res.json({
-	
+	Track.find({
+		_id : req.body.track_id
+	}).exec().then(function(track) {
+		res.json(track);
 	});
 });
 
