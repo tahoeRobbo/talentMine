@@ -1,0 +1,29 @@
+{
+  "name": "talent-mine",
+  "version": "1.0.0",
+  "description": "brown bag project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahoeRobbo/talentMine.git"
+  },
+  "keywords": [
+    "mean",
+    "node",
+    "express",
+    "angular",
+    "music"
+  ],
+  "author": "Robert R Hallowel //tahoeRobbo //dev mtn dm4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tahoeRobbo/talentMine/issues"
+  },
+  "homepage": "https://github.com/tahoeRobbo/talentMine#readme",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
